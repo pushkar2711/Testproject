@@ -22,7 +22,7 @@ public class ProductController {
 	@GET
 	@Produces(javax.ws.rs.core.MediaType.APPLICATION_JSON)
 	@Consumes(javax.ws.rs.core.MediaType.APPLICATION_JSON)
-	@Path("/{id}"
+	@Path("/{id}")
 	public ProductEntity getProduct(@PathParam("id") int id){
 		return productService.getProduct(id);
 	}
